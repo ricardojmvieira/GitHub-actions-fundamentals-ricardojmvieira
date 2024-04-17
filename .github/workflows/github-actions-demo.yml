@@ -11,12 +11,12 @@ on:
 jobs:
   Build:
     runs-on: ubuntu-latest
-      steps:
-        - run: |
-            echo "Triggered by event: ${{ github.event_name }}"
-            echo "Branch is ${{ github.ref }} and your repository is ."
-        - uses: actions/checkout@v3.3.0
-        - name: List files in the repository
-          run: |
-            echo "The repository ${{ github.repository }} contains the following files:"
-            tree
+    steps:
+      - run: |
+          echo "Triggered by event: ${{ github.event_name }}"
+          echo "Branch is ${{ github.ref }} and your repository is ."
+      - uses: actions/checkout@v3.3.0
+      - name: List files in the repository
+        run: |
+          echo "The repository ${{ github.repository }} contains the following files:"
+          tree
