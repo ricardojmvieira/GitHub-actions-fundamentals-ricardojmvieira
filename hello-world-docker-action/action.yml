@@ -9,7 +9,7 @@ outputs:
   time:
     description: 'The timewe said hello.'
 runs:
-  using: 'docker
+  using: 'docker'
   image: 'Dockerfile'
   args:
     - ${{ inputs.who-to-greet }}
